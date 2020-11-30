@@ -1,5 +1,5 @@
 <p align="center">
-	<img width="130px" style="border-radius:200px" src="https://raw.githubusercontent.com/DuanJiaNing/makeaplan_public/main/logo.png"/><br/>
+	<img width="130px" style="border-radius:200px" src="https://raw.githubusercontent.com/DuanJiaNing/makeaplan_public/main/logo1.png"/><br/>
 	<h1 align="center">制定一个计划</h1><br/>
 	<img width="1000px" src="https://raw.githubusercontent.com/DuanJiaNing/makeaplan_public/main/preview.png"/><br/>
 </p>
