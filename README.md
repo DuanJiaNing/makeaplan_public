@@ -7,7 +7,7 @@
 #### 问题反馈：如果你有任何问题，请进入[Issues](https://github.com/DuanJiaNing/makeaplan_public/issues)，并新建一个问题（[New issue](https://github.com/DuanJiaNing/makeaplan_public/issues/new)）。
 
 <p align="center">
-	<img width="600px" src="https://raw.githubusercontent.com/DuanJiaNing/makeaplan_public/main/preview.png"/>
+	<img width="1000px" src="https://raw.githubusercontent.com/DuanJiaNing/makeaplan_public/main/preview.png"/>
 </p>
 
 ## 简介
