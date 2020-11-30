@@ -1,8 +1,8 @@
 <p align="center">
-	<img width="130px" style="border-radius:200px" src="https://raw.githubusercontent.com/DuanJiaNing/makeaplan_public/main/logo.png"/>
-	<br/><h1 align="center">制定一个计划</h1><br/><br/>
-	<img width="1000px" src="https://raw.githubusercontent.com/DuanJiaNing/makeaplan_public/main/preview.png"/>
-</p>
+	<img width="130px" style="border-radius:200px" src="https://raw.githubusercontent.com/DuanJiaNing/makeaplan_public/main/logo.png"/><br/>
+	<h1 align="center">制定一个计划</h1><br/>
+	<img width="1000px" src="https://raw.githubusercontent.com/DuanJiaNing/makeaplan_public/main/preview.png"/><br/>
+</p><br/>
 
 #### 问题反馈：如果你有任何问题，请进入[Issues](https://github.com/DuanJiaNing/makeaplan_public/issues)，并新建一个问题（[New issue](https://github.com/DuanJiaNing/makeaplan_public/issues/new)）。
 
