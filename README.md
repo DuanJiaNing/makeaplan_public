@@ -15,7 +15,7 @@
 
 ## 相关日志
 
-- [os时间管理软件"制定一个计划"正式上线啦](https://www.jianshu.com/p/d46cb6343a9e)
+- [ios时间管理软件"制定一个计划"正式上线啦](https://www.jianshu.com/p/d46cb6343a9e)
 - 待更新
 
 ## 版本变化
