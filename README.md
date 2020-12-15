@@ -16,6 +16,7 @@
 ## 相关日志
 
 - [ios时间管理软件"制定一个计划"正式上线啦](https://www.jianshu.com/p/d46cb6343a9e)
+- [【制定一个计划】开发总结 - UI 设计和学习 Flutter](https://www.jianshu.com/p/b4c9ed264d79)
 - 待更新
 
 ## 版本变化
