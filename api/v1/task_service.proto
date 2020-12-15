@@ -1,0 +1,95 @@
+syntax = "proto3";
+
+package service;
+
+import "task.proto";
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+
+option go_package = "makeaplan.com/api/service";
+
+service TaskQuery {
+
+  // 查询计划的所有任务，指定阶段则查询指定计划指定阶段的所有任务
+  rpc QueryPlanTask (QueryPlanTaskRequest) returns (QueryPlanTaskResponse) {
+  }
+
+  // 查询指定任务
+  rpc QueryTask (QueryTaskRequest) returns (QueryTaskResponse) {
+  }
+}
+
+message QueryTaskRequest {
+  int32 task_id = 1;
+}
+
+message QueryTaskResponse {
+  Task task = 1;
+}
+
+message QueryPlanTaskRequest {
+  int32 plan_id = 1;
+  google.protobuf.Int32Value phase_id = 2;
+}
+
+message QueryPlanTaskResponse {
+  repeated Task tasks = 1;
+}
+
+
+service TaskModify {
+
+  // 创建任务
+  rpc CreateTask (CreateTaskRequest) returns (CreateTaskResponse) {
+  }
+
+  // 编辑任务
+  rpc UpdateTask (UpdateTaskRequest) returns (UpdateTaskResponse) {
+  }
+
+  // 删除任务
+  rpc DeleteTask (DeleteTaskRequest) returns (DeleteTaskResponse) {
+  }
+
+  // 更新任务 check 状态
+  rpc UpdateTaskCheckState (UpdateTaskCheckStateRequest) returns (UpdateTaskCheckStateResponse) {
+  }
+}
+
+message UpdateTaskCheckStateResponse {
+}
+
+message UpdateTaskCheckStateRequest {
+  int32 task_id = 1;
+  bool checked = 2;
+}
+
+message DeleteTaskRequest {
+  int32 task_id = 1;
+}
+
+message CreateTaskResponse {
+  int32 task_id = 1;
+}
+
+message DeleteTaskResponse {
+}
+
+message CreateTaskRequest {
+  string title = 1;
+  google.protobuf.Timestamp start_time = 2;
+  google.protobuf.Timestamp end_time = 3;
+  int32 plan_id = 4;
+  google.protobuf.Int32Value phase_id = 5;
+}
+
+message UpdateTaskRequest {
+  int32 task_id = 1;
+  string title = 2;
+  google.protobuf.Timestamp start_time = 3;
+  google.protobuf.Timestamp end_time = 4;
+}
+
+message UpdateTaskResponse {
+
+}

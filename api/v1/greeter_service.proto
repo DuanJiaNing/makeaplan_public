@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package service;
+
+option go_package = "makeaplan.com/api/service";
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+
+  rpc Start (StartRequest) returns (StartReply) {}
+
+  rpc UpdateUsername (UpdateUsernameRequest) returns (UpdateUsernameReply) {}
+
+  rpc UpdateDeviceID (UpdateDeviceIDRequest) returns (UpdateDeviceIDReply) {}
+
+  rpc InitPerSetPlan (InitPerSetPlanRequest) returns (InitPerSetPlanReply) {}
+}
+
+message InitPerSetPlanRequest {
+  int32 id = 1;
+}
+
+message InitPerSetPlanReply {}
+
+message UpdateDeviceIDReply {}
+
+message UpdateDeviceIDRequest {
+  string data_id = 1;
+}
+
+message UpdateUsernameRequest {
+  string username = 1;
+}
+
+message UpdateUsernameReply {}
+
+message StartReply {}
+
+message StartRequest {}
+
+// The request message containing the user's name.
+message HelloRequest {
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+}

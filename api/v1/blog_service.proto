@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package service;
+
+import "blog.proto";
+
+option go_package = "makeaplan.com/api/service";
+
+service BlogQuery {
+
+  rpc QueryAllBlog (QueryAllBlogRequest) returns (QueryAllBlogReply) {}
+}
+
+message QueryAllBlogRequest {}
+
+message QueryAllBlogReply {
+  repeated Blog blogs = 1;
+}

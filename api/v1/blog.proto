@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package service;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "makeaplan.com/api/model";
+
+message Blog {
+  int32 id = 1;
+  string title = 2;
+  string url = 3;
+  google.protobuf.Timestamp insert_time = 5;
+  google.protobuf.Timestamp update_time = 6;
+}

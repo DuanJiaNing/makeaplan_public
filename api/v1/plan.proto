@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package service;
+
+import "google/protobuf/timestamp.proto";
+import "common.proto";
+import "statistics.proto";
+
+option go_package = "makeaplan.com/api/model";
+
+message Plan {
+  int32 id = 1;
+  string title = 2;
+  string code = 3;
+  string note = 4;
+  PlanType type = 5;
+  int32 total_index = 7;
+  int32 min_index = 8;
+  int32 completed_index = 9;
+  google.protobuf.Timestamp start_time = 10;
+  google.protobuf.Timestamp end_time = 11;
+  google.protobuf.Timestamp update_time = 12;
+}
+
+message PlanSummary {
+  Plan plan = 1;
+  CommonStatus status = 2;
+  Statistics taskStatis = 3;
+  Statistics phaseStatis = 4;
+}
+
+enum PlanType {
+  UNKNOWN_TYPE = 0;
+
+  // 不分阶段的任务列表计划
+  TASK_LIST = 1;
+
+  // 分阶段计划
+  PHASED = 2;
+}
+
+enum PlanCompleteStatus {
+  UNKNOWN_PLAN_COMPLETE_STATUS = 0;
+
+  // 完成
+  PLAN_DONE = 1;
+
+  // 成功
+  PLAN_SUCCEED = 2;
+
+  // 失败
+  PLAN_FAILED = 3;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package service;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "makeaplan.com/api/model";
+
+message Task {
+  int32 id = 1;
+  string title = 2;
+  bool checked = 3;
+  google.protobuf.Timestamp start_time = 5;
+  google.protobuf.Timestamp end_time = 6;
+}

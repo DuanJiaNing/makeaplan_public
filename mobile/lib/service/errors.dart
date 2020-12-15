@@ -1,0 +1,4 @@
+enum ErrorCode {
+  UNKNOWN,
+  GRPC_CONNECTION_ALREADY_SHUTDOWN,
+}

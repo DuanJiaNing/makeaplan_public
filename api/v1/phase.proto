@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package service;
+
+import "google/protobuf/timestamp.proto";
+import "common.proto";
+import "statistics.proto";
+
+option go_package = "makeaplan.com/api/model";
+
+message Phase {
+  int32 id = 1;
+  string title = 2;
+  string note = 3;
+  google.protobuf.Timestamp start_time = 5;
+  google.protobuf.Timestamp end_time = 6;
+}
+
+message PhaseSummary {
+  Phase phase = 1;
+  CommonStatus status = 2;
+  Statistics taskStatis = 3;
+}
+
+enum PhaseCompleteStatus {
+  UNKNOWN_PHASE_COMPLETE_STATUS = 0;
+
+  // 完成
+  PHASE_DONE = 1;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package service;
+
+option go_package = "makeaplan.com/api/model";
+
+enum CommonStatus{
+  UNKNOWN_COMMON_STATUS = 0;
+
+  // 还没有开始的，开始时间到达后自动转为进行中状态
+  NOT_STARTED_YET = 1;
+
+  // 进行中
+  IN_PROGRESS = 2;
+
+  // 结束
+  FINISHED = 4;
+}

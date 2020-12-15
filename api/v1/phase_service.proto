@@ -1,0 +1,75 @@
+syntax = "proto3";
+
+package service;
+
+import "phase.proto";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+option go_package = "makeaplan.com/api/service";
+
+service PhaseQuery {
+
+  // 查询计划的所有阶段
+  rpc QueryPlanPhaseSummary (QueryPlanPhaseSummaryRequest) returns (QueryPlanPhaseSummaryResponse) {}
+
+  // 查询阶段
+  rpc QueryPhaseSummary (QueryPhaseSummaryRequest) returns (QueryPhaseSummaryResponse) {}
+}
+
+message QueryPhaseSummaryRequest {
+  int32 phase_id = 1;
+  int32 plan_id = 2;
+}
+
+message QueryPhaseSummaryResponse {
+  PhaseSummary phase = 1;
+}
+
+message QueryPlanPhaseSummaryRequest {
+  int32 plan_id = 1;
+}
+
+message QueryPlanPhaseSummaryResponse {
+  repeated PhaseSummary phases = 1;
+}
+
+service PhaseModify {
+
+  // 创建阶段
+  rpc CreatePhase (CreatePhaseRequest) returns (CreatePhaseResponse) {}
+
+  // 删除阶段
+  rpc DeletePhase (DeletePhaseRequest) returns (DeletePhaseResponse) {}
+
+  // 更新阶段
+  rpc UpdatePhase (UpdatePhaseRequest) returns (UpdatePhaseResponse) {}
+}
+
+message UpdatePhaseRequest {
+  int32 phase_id = 1;
+  string title = 2;
+  google.protobuf.StringValue note = 3;
+  google.protobuf.Timestamp start_time = 4;
+  google.protobuf.Timestamp end_time = 5;
+}
+
+message UpdatePhaseResponse {}
+
+message DeletePhaseRequest {
+  int32 phase_id = 1;
+}
+
+message DeletePhaseResponse {}
+
+message CreatePhaseRequest {
+  int32 plan_id = 1;
+  string title = 2;
+  google.protobuf.StringValue note = 3;
+  google.protobuf.Timestamp start_time = 4;
+  google.protobuf.Timestamp end_time = 5;
+}
+
+message CreatePhaseResponse{
+  int32 phase_id = 1;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package service;
+
+option go_package = "makeaplan.com/api/model";
+
+message Statistics {
+  int32 completed = 1;
+  int32 total = 2;
+}
