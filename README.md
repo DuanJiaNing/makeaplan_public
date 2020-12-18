@@ -6,9 +6,6 @@
 
 #### 问题反馈：如果你有任何问题，请进入[Issues](https://github.com/DuanJiaNing/makeaplan_public/issues)，并新建一个问题（[New issue](https://github.com/DuanJiaNing/makeaplan_public/issues/new)）。
 
-如果对源代码感兴趣，请发送邮件到 aimeimeits@gmail 并表明用途，我会打包发一份给你。
-<hr>
-
 <b>制定一个计划</b> 是一个目标规划应用，通过最直接，最清晰的方式帮助你记录和追踪自己的计划，方便随时查看，并做出调整，辅助你达成自己的目标。
 
 应用下载：[Apple Store](https://itunes.apple.com/app/id1541785145)
