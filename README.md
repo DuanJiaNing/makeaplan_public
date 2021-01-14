@@ -8,7 +8,7 @@
 
 <b>制定一个计划</b> 是一个目标规划应用，通过最直接，最清晰的方式帮助你记录和追踪自己的计划，方便随时查看，并做出调整，辅助你达成自己的目标。
 
-应用下载：[Apple Store](https://itunes.apple.com/app/id1541785145)
+应用下载：[Apple Store](https://itunes.apple.com/app/id1541785145), [Goole Play](https://play.google.com/store/apps/details?id=com.duan.makeaplan)
 
 ## 相关日志
 
