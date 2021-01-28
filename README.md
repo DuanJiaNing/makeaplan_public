@@ -10,6 +10,8 @@
 
 应用下载：[Apple Store](https://itunes.apple.com/app/id1541785145), [Goole Play](https://play.google.com/store/apps/details?id=com.duan.makeaplan)
 
+**Gitter** 即时交流 🏘️[房间](https://gitter.im/makeaplan/community)
+
 ## 相关日志
 
 - [ios时间管理软件"制定一个计划"正式上线啦](https://www.jianshu.com/p/d46cb6343a9e)
