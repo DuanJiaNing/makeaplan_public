@@ -4,11 +4,6 @@
 	<img width="1000px" src="https://raw.githubusercontent.com/DuanJiaNing/makeaplan_public/main/preview.png"/><br/>
 </p>
 
-| 发布日期 | 版本 |
-| :-----| ----: |
-| 2020.12.01 | 1.0.0 |
-| 2021.01.10 | 2.2.0 |
-| 2020.01.23 | 2.3.0 |
 
 #### 问题反馈：如果你有任何问题，请进入[Issues](https://github.com/DuanJiaNing/makeaplan_public/issues)，并新建一个问题（[New issue](https://github.com/DuanJiaNing/makeaplan_public/issues/new)）。
 
@@ -23,7 +18,16 @@
 - [ios时间管理软件"制定一个计划"正式上线啦](https://www.jianshu.com/p/d46cb6343a9e)
 - [【制定一个计划】开发总结 - UI 设计和学习 Flutter](https://www.jianshu.com/p/b4c9ed264d79)
 
+## 版本
+
+| 发布日期 | 版本 |
+| :-----| ----: |
+| 2020.12.01 | 1.0.0 |
+| 2021.01.10 | 2.2.0 |
+| 2020.01.23 | 2.3.0 |
+
 ## 即将推出的功能
+
 2021.01.10(v2.0.0)
 - [x] 国际化
 
